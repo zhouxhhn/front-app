@@ -1,0 +1,85 @@
+{
+  "name": "sipin-sales-cloud-frontend-app",
+  "version": "2.0.0",
+  "private": true,
+  "license": "SEE LICENSE IN <LICENSE>",
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "vendor": "webpack --config webpack.vendor.js",
+    "web": "sfe watch",
+    "build": "sfe build",
+    "ios": "react-native run-ios",
+    "android": "react-native run-android"
+  },
+  "dependencies": {
+    "@sipin/basic-libs": "^1.5.8",
+    "@sipin/sipin-sales-cloud-api": "1.1.11",
+    "@sipin/sipin-sales-cloud-components": "0.1.61",
+    "antd-mobile": "2.1.11",
+    "babel-polyfill": "^6.26.0",
+    "base64-js": "^1.3.0",
+    "history": "^4.7.2",
+    "mobx": "4.3.1",
+    "mobx-react": "5.1.0",
+    "moment": "^2.22.2",
+    "object-path": "^0.11.4",
+    "rc-form": "^2.2.3",
+    "react": "16.3.2",
+    "react-art": "16.3.2",
+    "react-dom": "16.3.2",
+    "react-fastclick": "^3.0.2",
+    "react-hot-loader": "^4.3.6",
+    "react-native": "^0.55.4",
+    "react-native-web": "0.8.11",
+    "react-native-webview-android": "^1.1.17",
+    "react-navigation": "^2.14.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "styled-components": "^3.4.6",
+    "superagent": "^3.8.3",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "7",
+    "@sipin/sfe": "^1.4.1",
+    "@sipin/sfe-preset-eslint": "^1.4.1",
+    "@sipin/sfe-preset-react": "^1.4.1",
+    "@sipin/sfe-preset-standard": "^1.4.1",
+    "@sipin/sfe-preset-typescript": "^1.4.1",
+    "@types/jest": "^23.3.1",
+    "@types/react": "16.3.0",
+    "@types/react-dom": "^16.0.7",
+    "@types/react-native": "^0.56.16",
+    "@types/react-navigation": "^2.0.19",
+    "@types/react-router": "^4.0.31",
+    "@types/react-test-renderer": "^16.0.2",
+    "@types/superagent": "^3.8.4",
+    "babel-jest": "23.4.2",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.3",
+    "babel-preset-react-native": "^4.0.1",
+    "jest": "23.5.0",
+    "react-native-typescript-transformer": "^1.2.10",
+    "react-test-renderer": "16.4.1",
+    "ts-jest": "^23.1.4",
+    "typescript": "^3.0.3"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(js)$": "<rootDir>/node_modules/babel-jest",
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "testPathIgnorePatterns": [
+      "\\.snap$",
+      "<rootDir>/node_modules/"
+    ],
+    "cacheDirectory": ".jest/cache"
+  }
+}

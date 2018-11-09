@@ -1,0 +1,8 @@
+{
+  "extends": [
+    "./node_modules/@sipin/sfe-preset-eslint/configs/eslint-config-ts.js"
+  ],
+  "rules": {
+    "typescript/explicit-function-return-type": 0
+  }
+}
